@@ -1,0 +1,90 @@
+# ╔══════════════════════════════════════════════════════════╗
+# ║  贡献数据更新 · 为交互式 Snake 页面提供每日数据              ║
+# ║  每天 UTC 0:00 自动运行                                    ║
+# ╚══════════════════════════════════════════════════════════╝
+
+name: Update Snake Data
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch contribution data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 从 GitHub 贡献页面抓取数据
+          curl -s -H "Accept: text/html" \
+            "https://github.com/users/xiachong07/contributions" \
+            -o /tmp/contrib.html
+
+          # 提取 data-date, data-level 和贡献数
+          python3 << 'PYEOF'
+          import re, json, sys
+
+          with open('/tmp/contrib.html', encoding='utf-8') as f:
+              html = f.read()
+
+          # 匹配贡献方格数据
+          # 格式: <td ... data-date="YYYY-MM-DD" data-level="N" ...>贡献数</td>
+          pattern = r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d)"[^>]*/>'
+          matches = re.findall(pattern, html)
+
+          contributions = []
+          for date, level in matches:
+              contributions.append({
+                  "date": date,
+                  "level": int(level),
+                  "count": 0  # 需要通过其他方式获取精确数
+              })
+
+          # 从 tooltip 中提取精确贡献数
+          tip_pattern = r'data-date="(\d{4}-\d{2}-\d{2})".*?</tool-tip>\s*(\d+)\s+contribution'
+          tip_matches = re.findall(tip_pattern, html, re.DOTALL)
+
+          # 合并数据
+          count_map = {d: int(c) for d, c in tip_matches}
+          for c in contributions:
+              if c["date"] in count_map:
+                  c["count"] = count_map[c["date"]]
+
+          total = sum(c["count"] for c in contributions)
+
+          output = {
+              "total": total,
+              "updated": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+              "contributions": contributions
+          }
+
+          with open('docs/snake-data.json', 'w') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print(f"Updated: {len(contributions)} days, {total} total contributions")
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet docs/snake-data.json; then
+            echo "No changes."
+          else
+            git add docs/snake-data.json
+            git commit -m "📊 Update contribution data for snake page [skip ci]"
+            git push
+            echo "Pushed!"
+          fi
