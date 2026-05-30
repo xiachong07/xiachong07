@@ -349,6 +349,21 @@
   修改颜色: 编辑 generate-snake.yml 中的 palette 参数
 -->
 
+## 💬 与 Claude 对话
+
+<div align="center">
+
+<a href="https://xiachong07.github.io/chat.html">
+  <img src="https://img.shields.io/badge/🤖_Chat_with_Claude-Ask_me_anything-58a6ff?style=for-the-badge&logo=openai&logoColor=white" alt="Chat" />
+</a>
+
+<br />
+<sub>点击进入对话页面 · 可聊编程、数学、数据科学</sub>
+
+</div>
+
+---
+
 ## 🐍 贡献图
 
 <div align="center">

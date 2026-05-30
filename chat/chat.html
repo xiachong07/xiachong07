@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat with Claude · xiachong07</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --bubble-user: #1f6feb33;
+    --bubble-ai: #161b22;
+    --input-bg: #0d1117;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f8fa;
+      --border: #d0d7de;
+      --text: #24292f;
+      --text-secondary: #57606a;
+      --accent: #0969da;
+      --bubble-user: #ddf4ff;
+      --bubble-ai: #f6f8fa;
+      --input-bg: #ffffff;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ═══════════ Header ═══════════ */
+  .header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header .avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7928ca, #ff0080);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .header h1 { font-size: 16px; font-weight: 600; }
+  .header .sub { font-size: 12px; color: var(--text-secondary); }
+  .header .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #39d353; margin-left: auto;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ═══════════ Messages ═══════════ */
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .msg {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 14px;
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .msg.ai {
+    align-self: flex-start;
+    background: var(--bubble-ai);
+    border: 1px solid var(--border);
+    border-bottom-left-radius: 4px;
+  }
+  .msg.user {
+    align-self: flex-end;
+    background: var(--bubble-user);
+    border: 1px solid var(--accent);
+    border-bottom-right-radius: 4px;
+  }
+  .msg .label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
+  .msg.ai .label { color: var(--accent); }
+
+  /* ═══════════ Typing ═══════════ */
+  .typing {
+    align-self: flex-start;
+    padding: 12px 16px;
+    background: var(--bubble-ai);
+    border: 1px solid var(--border);
+    border-radius: 12px 12px 12px 4px;
+    display: none;
+  }
+  .typing.active { display: block; }
+  .typing span {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    margin: 0 2px;
+    animation: bounce 1.4s infinite;
+  }
+  .typing span:nth-child(2) { animation-delay: 0.2s; }
+  .typing span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+  }
+
+  /* ═══════════ Input ═══════════ */
+  .input-area {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    gap: 10px;
+  }
+  .input-area input {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .input-area input:focus {
+    border-color: var(--accent);
+  }
+  .input-area button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #7928ca, #ff0080);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .input-area button:hover { opacity: 0.85; }
+  .input-area button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* ═══════════ Footer ═══════════ */
+  .footer {
+    text-align: center;
+    padding: 8px;
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ═══════════ Responsive ═══════════ */
+  @media (max-width: 600px) {
+    .msg { max-width: 90%; }
+    .header h1 { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="avatar">🤖</div>
+  <div>
+    <h1>Chat with Claude</h1>
+    <div class="sub">Powered by Anthropic · @xiachong07</div>
+  </div>
+  <div class="dot" title="Online"></div>
+</div>
+
+<div class="messages" id="messages">
+  <div class="msg ai">
+    <div class="label">Claude Opus 4.7</div>
+    Hi! I'm Claude, an AI assistant. Ask me anything about coding, math, data science, or the projects in this portfolio. How can I help you today?
+  </div>
+</div>
+
+<div class="typing" id="typing">
+  <span></span><span></span><span></span>
+</div>
+
+<div class="input-area">
+  <input
+    id="userInput"
+    type="text"
+    placeholder="Ask me anything..."
+    autocomplete="off"
+    onkeydown="if(event.key==='Enter')send()"
+  />
+  <button id="sendBtn" onclick="send()">Send</button>
+</div>
+
+<div class="footer">
+  <a href="https://github.com/xiachong07" target="_blank">@xiachong07</a>
+  · Responses may be inaccurate
+</div>
+
+<script>
+const API_URL = 'https://claude-chat-proxy.YOUR-SUBDOMAIN.workers.dev';
+// ── Replace YOUR-SUBDOMAIN after deploying the Cloudflare Worker ──
+
+let isLoading = false;
+
+function scrollBottom() {
+  const el = document.getElementById('messages');
+  el.scrollTop = el.scrollHeight;
+}
+
+function addMessage(role, text) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  if (role === 'ai') {
+    div.innerHTML = '<div class="label">Claude Opus 4.7</div>' + text;
+  } else {
+    div.innerHTML = '<div class="label">You</div>' + text;
+  }
+  document.getElementById('messages').appendChild(div);
+  scrollBottom();
+}
+
+async function send() {
+  const input = document.getElementById('userInput');
+  const btn = document.getElementById('sendBtn');
+  const text = input.value.trim();
+  if (!text || isLoading) return;
+
+  input.value = '';
+  input.disabled = true;
+  btn.disabled = true;
+  isLoading = true;
+
+  addMessage('user', escapeHtml(text));
+
+  const typing = document.getElementById('typing');
+  typing.classList.add('active');
+  scrollBottom();
+
+  try {
+    const resp = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text })
+    });
+
+    if (!resp.ok) throw new Error('API error: ' + resp.status);
+
+    const data = await resp.json();
+    typing.classList.remove('active');
+    addMessage('ai', formatMarkdown(data.reply));
+  } catch (e) {
+    typing.classList.remove('active');
+    addMessage('ai',
+      'Sorry, the chat service is not configured yet. '
+      + 'Please check the Cloudflare Worker setup in the '
+      + '<a href="https://github.com/xiachong07/xiachong07/blob/main/chat/worker.js" target="_blank">worker.js</a> file.'
+    );
+    console.error(e);
+  }
+
+  input.disabled = false;
+  btn.disabled = false;
+  input.focus();
+  isLoading = false;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function formatMarkdown(s) {
+  return s
+    .replace(/`([^`]+)`/g, '<code style="background:var(--border);padding:1px 5px;border-radius:3px;font-size:13px">$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>');
+}
+</script>
+</body>
+</html>
