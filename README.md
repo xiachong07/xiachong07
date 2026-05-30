@@ -362,12 +362,6 @@
   <img alt="snake" src="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
-<br />
-
-<a href="https://xiachong07.github.io/snake.html">
-  <img src="https://img.shields.io/badge/🕹️_交互版-悬停浮动放大效果-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Interactive" />
-</a>
-
 </div>
 
 ---
