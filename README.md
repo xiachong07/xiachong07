@@ -366,7 +366,7 @@
 <!--  我的消息  -->
 <p style="margin-bottom:14px;">
   <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-       width="44" height="44" style="border-radius:50%;vertical-align:top;"
+       width="36" height="36" style="border-radius:50%;vertical-align:top;"
        alt="xiachong" />
   &nbsp;
   <span style="
@@ -384,8 +384,8 @@
 <!--  访客消息  -->
 <p style="margin-bottom:14px;">
   <span style="
-    width:44px;height:44px;border-radius:50%;
-    background:#30363d;line-height:44px;font-size:18px;
+    width:36px;height:36px;border-radius:50%;
+    background:#30363d;line-height:36px;font-size:16px;
     display:inline-block;text-align:center;vertical-align:top;
   ">👤</span>
   &nbsp;
@@ -401,7 +401,7 @@
 <!--  我的回复  -->
 <p>
   <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-       width="44" height="44" style="border-radius:50%;vertical-align:top;"
+       width="36" height="36" style="border-radius:50%;vertical-align:top;"
        alt="xiachong" />
   &nbsp;
   <span style="
