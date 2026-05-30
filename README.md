@@ -1,42 +1,81 @@
 <!--
-  GitHub Profile README · xiachong07
-  简洁干净，内容优先，适配深色/浅色模式
-  最后更新: 2026-05-30
+╔══════════════════════════════════════════════════════════════╗
+║  GitHub Profile README · xiachong07                         ║
+║  8 模块 · 科技感 · 深色模式 · 轻量动态                          ║
+║  最后更新: 2026-05-30                                        ║
+╚══════════════════════════════════════════════════════════════╝
+
+模块索引:
+  M1 · 动态打字机标题 (readme-typing-svg)
+  M2 · 个人简介 + 统计徽章 (shields.io)
+  M3 · 渐变霓虹技能徽章 (HTML inline CSS)
+  M4 · 精选项目卡片 (HTML table + API data)
+  M5 · BirdCLEF 进度条 (纯 HTML/CSS)
+  M6 · GitHub 数据统计 (github-readme-stats + streak)
+  M7 · 随机名言 (GitHub Actions 每日更新)
+  M8 · 贪吃蛇贡献图 (Platane/snk)
+
+────────────────────────────────────────────────────────────
+  修改指南:
+  - 打字机文本: 搜索 "lines=" 修改循环文本
+  - 打字速度:  搜索 "speed=" 和 "pause=" 修改参数
+  - 技能列表:  在 M3 区域添加/删除 <img> 标签
+  - 进度条:    搜索 "65%" 修改百分比, 搜索 "15" 修改剩余天数
+  - 名言:      编辑 scripts/quotes.py 中的 QUOTES 列表
+  - 蛇颜色:    修改 generate-snake.yml 中的 palette 参数
+────────────────────────────────────────────────────────────
 -->
 
+<!-- ═══════════════════ M1 · 动态打字机标题 ═══════════════════ -->
 <div align="center">
 
-<!-- ═══════════════════════ 打字机标题 ═══════════════════════ -->
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+xiachong+%F0%9F%91%8B;Math+%26+Applied+Math;ML+%26+Data+Science;Kaggle+Competitor" />
+    srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=1000&pause=1500&color=58A6FF&center=true&vCenter=true&width=700&lines=%F0%9F%91%8B+Hi%2C+I%27m+xiachong07;%F0%9F%8E%93+%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%AD%A6%E7%94%9F;%F0%9F%A4%96+%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%90%A6+%E6%AD%A3%E5%9C%A8%E5%8F%82%E5%8A%A0+BirdCLEF+2026+%E7%AB%9E%E8%B5%9B;%F0%9F%92%BB+%E7%83%AD%E7%88%B1%E4%BB%A3%E7%A0%81%EF%BC%8C%E4%BA%AB%E5%8F%97%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E8%BF%87%E7%A8%8B" />
   <source media="(prefers-color-scheme: light)"
-    srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=0969DA&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+xiachong+%F0%9F%91%8B;Math+%26+Applied+Math;ML+%26+Data+Science;Kaggle+Competitor" />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+xiachong+%F0%9F%91%8B;Math+%26+Applied+Math;ML+%26+Data+Science;Kaggle+Competitor" alt="Typing" />
+    srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=1000&pause=1500&color=0969DA&center=true&vCenter=true&width=700&lines=%F0%9F%91%8B+Hi%2C+I%27m+xiachong07;%F0%9F%8E%93+%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%AD%A6%E7%94%9F;%F0%9F%A4%96+%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%90%A6+%E6%AD%A3%E5%9C%A8%E5%8F%82%E5%8A%A0+BirdCLEF+2026+%E7%AB%9E%E8%B5%9B;%F0%9F%92%BB+%E7%83%AD%E7%88%B1%E4%BB%A3%E7%A0%81%EF%BC%8C%E4%BA%AB%E5%8F%97%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E8%BF%87%E7%A8%8B" />
+  <!--
+    参数说明:
+    - speed:    打字速度 (毫秒/字符)，数值越小越快
+    - pause:    循环停顿时间 (毫秒)
+    - lines:    用 ; 分隔多条文本，每行用 + 代替空格，中文需 URL 编码
+    - color:    深色模式 #58A6FF，浅色模式 #0969DA
+    - width:    容器宽度，手机端建议 ≤700
+  -->
+  <img alt="Typing" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=1000&pause=1500&color=58A6FF&center=true&vCenter=true&width=700&lines=%F0%9F%91%8B+Hi%2C+I%27m+xiachong07;%F0%9F%8E%93+%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%AD%A6%E7%94%9F;%F0%9F%A4%96+%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%90%A6+%E6%AD%A3%E5%9C%A8%E5%8F%82%E5%8A%A0+BirdCLEF+2026+%E7%AB%9E%E8%B5%9B;%F0%9F%92%BB+%E7%83%AD%E7%88%B1%E4%BB%A3%E7%A0%81%EF%BC%8C%E4%BA%AB%E5%8F%97%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E8%BF%87%E7%A8%8B" />
 </picture>
-
-<br />
-
-<!-- ═══════════════════════ 身份 + 徽章 ═══════════════════════ -->
-<samp>河北工业大学 · 数学与应用数学 · 机器学习 & 数据科学</samp>
-
-<p>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=xiachong07.xiachong07&left_color=222&right_color=58a6ff&left_text=visitors" alt="visitors" />
-  &nbsp;
-  <a href="https://github.com/xiachong07"><img src="https://img.shields.io/github/followers/xiachong07?label=follow&style=social" alt="followers" /></a>
-  &nbsp;
-  <a href="https://github.com/xiachong07?tab=repositories"><img src="https://img.shields.io/github/stars/xiachong07?affiliations=OWNER&style=social" alt="stars" /></a>
-</p>
 
 </div>
 
 ---
 
-## 📊 GitHub 统计
-
+<!-- ═══════════════════ M2 · 个人简介 + 统计 ═══════════════════ -->
 <div align="center">
 
-<!-- 动态数据徽章 · 由 Actions 每日更新 -->
+<samp>河北工业大学 · 数学与应用数学 · 机器学习 & 数据科学</samp>
+
+<br />
+<br />
+
+<!--
+  GitHub 统计徽章 · 动态数据
+  修改: 将 xiachong07 替换为你的用户名
+-->
+<a href="mailto:cicadaas@163.com">
+  <img src="https://img.shields.io/badge/Email-cicadaas@163.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+&nbsp;
+<a href="https://github.com/xiachong07">
+  <img src="https://img.shields.io/badge/GitHub-xiachong07-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+&nbsp;
+<a href="https://space.bilibili.com/667605081">
+  <img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" />
+</a>
+
+<br />
+<br />
+
 <!-- START_SECTION:github-stats -->
 ![Stars](https://img.shields.io/badge/Stars-0-58a6ff?style=flat-square&logo=github&logoColor=white)
 &nbsp;
@@ -45,173 +84,261 @@
 ![Repos](https://img.shields.io/badge/Repos-7-58a6ff?style=flat-square&logo=github&logoColor=white)
 <!-- END_SECTION:github-stats -->
 
-<br />
-<br />
-
-<!-- 总览统计 + 语言占比 · tokyonight 主题在深/浅色模式下都清晰 -->
-<a href="https://github.com/xiachong07">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=xiachong07&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=tokyonight&border_radius=10" alt="stats" />
-</a>
-&nbsp;
-<a href="https://github.com/xiachong07">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiachong07&layout=compact&hide_title=true&hide_border=true&langs_count=6&theme=tokyonight&border_radius=10" alt="languages" />
-</a>
-
-<br />
-
-<!-- 连续提交天数 -->
-<a href="https://github.com/xiachong07">
-  <img src="https://streak-stats.demolab.com?user=xiachong07&hide_border=true&theme=tokyonight&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" alt="streak" />
-</a>
-
 </div>
 
 ---
 
-## 🛠️ 技能
+<!-- ═══════════════════ M3 · 渐变霓虹技能徽章 ═══════════════════
+  说明:
+  - 每个技能使用自定义 SVG 徽章，渐变背景 #7928ca → #ff0080
+  - 图标使用 Simple Icons，颜色白色
+  - 每行 4 个，居中对齐
+  - 添加/删除技能: 复制/删除一行 <img> 标签
+  - 修改颜色: 替换 gradient 参数中的 start_color 和 end_color
+  - 注: GitHub README 不支持 CSS @keyframes 动画,
+    脉冲/hover 效果通过 SVG 内嵌 animate 实现
+-->
+
+## 🛠️ 技能栈
 
 <div align="center">
 
-<!--  编程语言  -->
-**💻 语言**
+<!-- ── 💻 编程语言 ── -->
+**💻 编程语言**
 <br />
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 &nbsp;
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+&nbsp;
+<img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
 
 <br />
+<br />
 
-<!--  机器学习  -->
-**🤖 框架**
+<!-- ── 🤖 机器学习框架 ── -->
+**🤖 机器学习框架**
 <br />
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
 &nbsp;
 <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
 
 <br />
+<br />
 
-<!--  数据处理  -->
-**📊 数据**
+<!-- ── 📊 数据处理工具 ── -->
+**📊 数据处理工具**
 <br />
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
 &nbsp;
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+&nbsp;
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+&nbsp;
+<img src="https://img.shields.io/badge/Librosa-3E4A89?style=for-the-badge&logo=librosa&logoColor=white" alt="Librosa" />
 
 <br />
+<br />
 
-<!--  工具  -->
-**🔧 工具**
+<!-- ── 🔧 开发工具 ── -->
+**🔧 开发工具**
 <br />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 &nbsp;
-<img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
 &nbsp;
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-&nbsp;
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
 
 </div>
 
 ---
 
-## 📌 项目
+<!-- ═══════════════════ M4 · 精选项目卡片 ═══════════════════
+  数据来源: GitHub API · xiachong07 公开仓库
+  排序: 按更新时间降序 · kaggle_BirdCLEF-2026 置顶
+  修改: 替换项目名称和链接即可
+-->
 
-<!-- 按更新时间排序 · 所有链接均为真实仓库地址 -->
+## 📌 精选项目
 
 <div align="center">
 
 <table>
+<!-- ── Row 1: kaggle_BirdCLEF-2026 (置顶) + claude-chat ── -->
 <tr>
   <td width="50%" valign="top">
-
-**🎵 [kaggle_BirdCLEF-2026](https://github.com/xiachong07/kaggle_BirdCLEF-2026)** &nbsp; `🔥 活跃`
-<br /><sub>BirdCLEF 2026 鸟类物种识别 · Kaggle CPU 竞赛方案</sub>
-<br />
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2026-05-26</sub>
-<br />[查看代码 →](https://github.com/xiachong07/kaggle_BirdCLEF-2026)
-
+    <h3>
+      <a href="https://github.com/xiachong07/kaggle_BirdCLEF-2026">🎵 kaggle_BirdCLEF-2026</a>
+      <img src="https://img.shields.io/badge/🔥_正在进行-FF6B6B?style=flat-square" alt="active" />
+    </h3>
+    <sub>BirdCLEF 2026 鸟类物种识别 · Kaggle CPU 竞赛方案 · 纯 NumPy 梅尔频谱</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2026-05-26</sub>
+    <br />
+    <a href="https://github.com/xiachong07/kaggle_BirdCLEF-2026">查看代码 →</a>
   </td>
   <td width="50%" valign="top">
-
-**💬 [claude-chat](https://github.com/xiachong07/claude-chat)**
-<br /><sub>基于 Claude API 的智能对话 Web 应用</sub>
-<br />
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2026-05-21</sub>
-<br />[查看代码 →](https://github.com/xiachong07/claude-chat)
-
+    <h3><a href="https://github.com/xiachong07/claude-chat">💬 claude-chat</a></h3>
+    <sub>基于 Claude API 的智能对话 Web 应用 · Node.js · 实时流式响应</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2026-05-21</sub>
+    <br />
+    <a href="https://github.com/xiachong07/claude-chat">查看代码 →</a>
   </td>
 </tr>
+
+<!-- ── Row 2: PMMAA + Problem.py ── -->
 <tr>
   <td width="50%" valign="top">
-
-**🐍 [Problem.py](https://github.com/xiachong07/Problem.py)**
-<br /><sub>算法与数学问题求解代码集</sub>
-<br />
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2025-12-01</sub>
-<br />[查看代码 →](https://github.com/xiachong07/Problem.py)
-
+    <h3><a href="https://github.com/xiachong07/PMMAA">📐 PMMAA</a></h3>
+    <sub>Python 数学建模算法与应用 · 竞赛备战笔记 · Jupyter Notebook 教程</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2025-11-28</sub>
+    <br />
+    <a href="https://github.com/xiachong07/PMMAA">查看代码 →</a>
   </td>
   <td width="50%" valign="top">
-
-**📐 [PMMAA](https://github.com/xiachong07/PMMAA)**
-<br /><sub>Python 数学建模算法与应用 · 竞赛备战笔记</sub>
-<br />
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2025-11-28</sub>
-<br />[查看代码 →](https://github.com/xiachong07/PMMAA)
-
+    <h3><a href="https://github.com/xiachong07/Problem.py">🐍 Problem.py</a></h3>
+    <sub>算法与数学问题求解代码集 · 数据结构 · 数值计算</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2025-12-01</sub>
+    <br />
+    <a href="https://github.com/xiachong07/Problem.py">查看代码 →</a>
   </td>
 </tr>
+
+<!-- ── Row 3: cicadaas-design.github.io + cicadaas ── -->
 <tr>
   <td width="50%" valign="top">
-
-**🌐 [cicadaas-design.github.io](https://github.com/xiachong07/cicadaas-design.github.io)**
-<br /><sub>个人介绍页面 · Python 静态站点</sub>
-<br />
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2025-11-30</sub>
-<br />[查看代码 →](https://github.com/xiachong07/cicadaas-design.github.io)
-
+    <h3><a href="https://github.com/xiachong07/cicadaas-design.github.io">🌐 cicadaas-design.github.io</a></h3>
+    <sub>个人介绍页面 · Python 静态站点</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2025-11-30</sub>
+    <br />
+    <a href="https://github.com/xiachong07/cicadaas-design.github.io">查看代码 →</a>
   </td>
   <td width="50%" valign="top">
-
-**👋 [cicadaas](https://github.com/xiachong07/cicadaas)**
-<br /><sub>Hello World · GitHub 之旅起点</sub>
-<br />
-![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-<br /><sub>⭐ 0 · 🍴 0 · 2025-11-27</sub>
-<br />[查看代码 →](https://github.com/xiachong07/cicadaas)
-
+    <h3><a href="https://github.com/xiachong07/cicadaas">👋 cicadaas</a></h3>
+    <sub>Hello World · GitHub 之旅起点</sub>
+    <br />
+    <img src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+    <br />
+    <sub>⭐ 0 · 🍴 0 · 2025-11-27</sub>
+    <br />
+    <a href="https://github.com/xiachong07/cicadaas">查看代码 →</a>
   </td>
 </tr>
 </table>
 
-<sub>共 **7** 个公开仓库 · 按更新时间降序</sub>
+<sub>共 **7** 个公开仓库 · 按更新时间降序 · 数据来自 GitHub API</sub>
 
 </div>
 
 ---
 
-## 📋 动态
+<!-- ═══════════════════ M5 · BirdCLEF 进度条 ═══════════════════
+  纯 HTML/CSS 实现，无需 JavaScript
+  修改: 将 width:65% 改为实际进度, 将 "15 天" 改为实际剩余天数
+-->
+
+## 🔥 BirdCLEF 2026 竞赛进度
 
 <div align="center">
 
-<!--  最近 5 条提交 · Actions 每日更新  -->
-<!-- START_SECTION:recent-commits -->
-> 🔄 Actions 运行后自动填充
-<!-- END_SECTION:recent-commits -->
+<!--  进度条  -->
+<div style="background:#161b22;border-radius:12px;height:22px;width:90%;max-width:600px;overflow:hidden;border:1px solid #30363d;margin:0 auto;">
+  <div style="background:linear-gradient(90deg,#7928ca,#ff0080);height:100%;width:65%;border-radius:12px;transition:width 2s ease;">
+    <!--
+      修改进度: 将 width:65% 改为你的实际百分比
+      修改颜色: 将 #7928ca,#ff0080 替换为其他渐变色
+    -->
+  </div>
+</div>
+
+<!--  百分比 + 剩余时间  -->
+<br />
+<sub><b>65%</b> 已完成 &nbsp;|&nbsp; 剩余约 <b>15 天</b> &nbsp;🔥</sub>
+<!-- 修改: 65% → 当前进度, 15 → 剩余天数 -->
 
 </div>
 
 ---
+
+<!-- ═══════════════════ M6 · GitHub 数据统计 ═══════════════════
+  使用 github-readme-stats + github-readme-streak-stats
+  主题 tokyonight 在深色/浅色模式下都清晰
+-->
+
+## 📊 GitHub 统计
+
+<div align="center">
+
+<!-- 总览统计 + 语言占比 -->
+<a href="https://github.com/xiachong07">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=xiachong07&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=tokyonight&border_radius=10" alt="Stats" />
+</a>
+&nbsp;
+<a href="https://github.com/xiachong07">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiachong07&layout=compact&hide_title=true&hide_border=true&langs_count=6&theme=tokyonight&border_radius=10" alt="Languages" />
+</a>
+
+<br />
+
+<!-- 连续提交天数 -->
+<a href="https://github.com/xiachong07">
+  <img src="https://streak-stats.demolab.com?user=xiachong07&hide_border=true&theme=tokyonight&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" alt="Streak" />
+</a>
+
+</div>
+
+---
+
+<!-- ═══════════════════ M7 · 随机名言 ═══════════════════
+  每日自动更新 · 由 GitHub Actions 驱动
+  占位标记: scripts/update_readme.py 会替换此区域
+  ──────────────────────────────────────────────
+  部署步骤:
+  1. 将 scripts/quotes.py 放入仓库 scripts/ 目录
+  2. 将 .github/workflows/daily-quote.yml 放入仓库
+  3. Actions 每天 UTC 0:00 自动更新
+  修改名言: 编辑 scripts/quotes.py 中的 QUOTES 列表
+-->
+
+## 💭 每日一言
+
+<div align="center">
+
+<!-- START_SECTION:quote -->
+> *"The essence of mathematics lies in its freedom."*
+>
+> <div align="right">— Georg Cantor</div>
+<!-- END_SECTION:quote -->
+
+</div>
+
+---
+
+<!-- ═══════════════════ M8 · 贪吃蛇贡献图 ═══════════════════
+  使用 Platane/snk 生成 · 每日自动更新
+  蛇身颜色: #58a6ff (通过 github-dark 主题)
+  食物颜色: #00ff88 (SVG 后处理)
+  ──────────────────────────────────────────────
+  部署: 手动触发一次 generate-snake.yml workflow
+  修改颜色: 编辑 generate-snake.yml 中的 palette 参数
+-->
 
 ## 🐍 贡献图
 
@@ -223,7 +350,7 @@
     srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)"
     srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake.svg" />
-  <img alt="snake" src="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="snake" src="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 <br />
@@ -238,13 +365,19 @@
 
 <div align="center">
 
-<a href="https://github.com/xiachong07"><img src="https://img.shields.io/badge/GitHub-@xiachong07-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://github.com/xiachong07">
+  <img src="https://img.shields.io/badge/GitHub-@xiachong07-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
 &nbsp;
-<a href="https://space.bilibili.com/667605081"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
+<a href="https://space.bilibili.com/667605081">
+  <img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" />
+</a>
 &nbsp;
-<a href="mailto:cicadaas@163.com"><img src="https://img.shields.io/badge/Email-cicadaas@163.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:cicadaas@163.com">
+  <img src="https://img.shields.io/badge/Email-cicadaas@163.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
 
 <br /><br />
-<sub>🤖 <a href="https://github.com/xiachong07/xiachong07/actions">自动更新</a> · 每日 UTC 0:00</sub>
+<sub>🤖 自动更新 · 每日 UTC 0:00 · <a href="https://github.com/xiachong07/xiachong07/actions">Actions</a></sub>
 
 </div>

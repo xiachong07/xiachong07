@@ -1,0 +1,67 @@
+# ╔══════════════════════════════════════════════════════════╗
+# ║  每日名言 · 每天 UTC 0:00 随机更新                           ║
+# ║  名言来源: scripts/quotes.py                              ║
+# ╚══════════════════════════════════════════════════════════╝
+
+name: Daily Quote
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update quote in README
+        run: |
+          cd scripts
+          QUOTE_MD=$(python3 quotes.py)
+
+          cd ..
+          python3 << PYEOF
+          import re
+
+          with open("README.md", encoding="utf-8") as f:
+              readme = f.read()
+
+          quote_md = """$QUOTE_MD"""
+
+          # 替换 <!-- START_SECTION:quote --> ... <!-- END_SECTION:quote -->
+          pattern = r"<!-- START_SECTION:quote -->.*?<!-- END_SECTION:quote -->"
+          replacement = f"<!-- START_SECTION:quote -->\\n{quote_md}\\n<!-- END_SECTION:quote -->"
+
+          readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(readme)
+
+          print("Quote updated!")
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet README.md; then
+            echo "No changes."
+          else
+            git add README.md
+            git commit -m "💭 Daily quote update [skip ci]"
+            git push
+            echo "Pushed!"
+          fi
