@@ -240,7 +240,9 @@
 
 <a href="https://github.com/xiachong07"><img src="https://img.shields.io/badge/GitHub-@xiachong07-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 &nbsp;
-<a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://space.bilibili.com/667605081"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
+&nbsp;
+<a href="mailto:cicadaas@163.com"><img src="https://img.shields.io/badge/Email-cicadaas@163.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br /><br />
 <sub>🤖 <a href="https://github.com/xiachong07/xiachong07/actions">自动更新</a> · 每日 UTC 0:00</sub>
