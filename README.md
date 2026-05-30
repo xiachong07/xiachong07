@@ -213,17 +213,19 @@
 
 ---
 
-## 🐍 贡献图
+## 📈 贡献热力图
 
 <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=xiachong07&theme=github-dark&hide_border=true&bg_color=0d1117&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&radius=8" />
   <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake.svg" />
-  <img alt="snake" src="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=xiachong07&theme=github-light&hide_border=true&bg_color=ffffff&line=0969da&point=0969da&area=true&area_color=0969da&radius=8" />
+  <img alt="activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=xiachong07&theme=github-dark&hide_border=true&bg_color=0d1117&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&radius=8" />
 </picture>
+
+<sub>💡 悬浮交互贡献图请查看 <a href="https://github.com/xiachong07">个人主页顶部</a></sub>
 
 </div>
 
