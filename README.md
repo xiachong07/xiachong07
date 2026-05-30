@@ -360,71 +360,59 @@
 
 <div align="center">
 
-<!-- ── 聊天卡片 · 纯左对齐 · 大头像 ── -->
+<!-- ── 聊天卡片 ── -->
 <div style="max-width:420px;margin:0 auto;">
 
 <!--  我的消息  -->
-<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:14px;">
-<tr>
-  <td width="48" valign="top" style="padding:0;">
-    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="44" height="44" style="border-radius:50%;" alt="xiachong" />
-  </td>
-  <td valign="top" style="padding:0 0 0 12px;">
-    <div style="
-      background:#21262d;color:#c9d1d9;
-      padding:10px 14px;border-radius:4px 16px 16px 16px;
-      font-size:13px;line-height:1.55;
-    ">
-      👋 嗨！我是 <b>xiachong</b><br/>
-      数学系学生 · ML &amp; Data Science<br/>
-      正在参加 <b>BirdCLEF 2026</b> 竞赛<br/>
-      关于我的项目随时问我～
-    </div>
-  </td>
-</tr>
-</table>
+<p style="margin-bottom:14px;">
+  <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+       width="44" height="44" style="border-radius:50%;vertical-align:top;"
+       alt="xiachong" />
+  &nbsp;
+  <span style="
+    background:#21262d;color:#c9d1d9;
+    padding:10px 14px;border-radius:4px 16px 16px 16px;
+    font-size:13px;line-height:1.55;display:inline-block;max-width:340px;
+  ">
+    👋 嗨！我是 <b>xiachong</b><br/>
+    数学系学生 · ML &amp; Data Science<br/>
+    正在参加 <b>BirdCLEF 2026</b> 竞赛<br/>
+    关于我的项目随时问我～
+  </span>
+</p>
 
 <!--  访客消息  -->
-<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:14px;">
-<tr>
-  <td width="48" valign="top" style="padding:0;">
-    <div style="
-      width:44px;height:44px;border-radius:50%;
-      background:#30363d;text-align:center;line-height:44px;font-size:18px;
-    ">👤</div>
-  </td>
-  <td valign="top" style="padding:0 0 0 12px;">
-    <div style="
-      background:#21262d;color:#c9d1d9;
-      padding:10px 14px;border-radius:4px 16px 16px 16px;
-      font-size:13px;line-height:1.55;
-    ">
-      你的 BirdCLEF 项目用了哪些技术？
-    </div>
-  </td>
-</tr>
-</table>
+<p style="margin-bottom:14px;">
+  <span style="
+    width:44px;height:44px;border-radius:50%;
+    background:#30363d;line-height:44px;font-size:18px;
+    display:inline-block;text-align:center;vertical-align:top;
+  ">👤</span>
+  &nbsp;
+  <span style="
+    background:#21262d;color:#c9d1d9;
+    padding:10px 14px;border-radius:4px 16px 16px 16px;
+    font-size:13px;line-height:1.55;display:inline-block;max-width:340px;
+  ">
+    你的 BirdCLEF 项目用了哪些技术？
+  </span>
+</p>
 
 <!--  我的回复  -->
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-  <td width="48" valign="top" style="padding:0;">
-    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="44" height="44" style="border-radius:50%;" alt="xiachong" />
-  </td>
-  <td valign="top" style="padding:0 0 0 12px;">
-    <div style="
-      background:#21262d;color:#c9d1d9;
-      padding:10px 14px;border-radius:4px 16px 16px 16px;
-      font-size:13px;line-height:1.55;
-    ">
-      主要用 <b>Python + NumPy</b> 做音频处理<br/>
-      <b>PyTorch</b> 训练分类模型，点进来聊 👉
-    </div>
-  </td>
-</tr>
-</table>
+<p>
+  <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+       width="44" height="44" style="border-radius:50%;vertical-align:top;"
+       alt="xiachong" />
+  &nbsp;
+  <span style="
+    background:#21262d;color:#c9d1d9;
+    padding:10px 14px;border-radius:4px 16px 16px 16px;
+    font-size:13px;line-height:1.55;display:inline-block;max-width:340px;
+  ">
+    主要用 <b>Python + NumPy</b> 做音频处理<br/>
+    <b>PyTorch</b> 训练分类模型，点进来聊 👉
+  </span>
+</p>
 
 </div>
 
