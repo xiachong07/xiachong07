@@ -1,69 +1,36 @@
-# ╔══════════════════════════════════════════════════════════╗
-# ║  GitHub Profile README · 每日自动更新                      ║
-# ║  触发：UTC 0:00 定时 + 手动触发 + Push 到 main 分支          ║
-# ╚══════════════════════════════════════════════════════════╝
-
 name: Update Profile README
 
 on:
-  # ── 每天 UTC 0:00 自动运行 ──────────────────────────────
   schedule:
     - cron: "0 0 * * *"
-
-  # ── 支持手动触发（GitHub Actions 页面点击 Run workflow） ──
   workflow_dispatch:
 
-  # ── 推送到 main 时也触发（方便调试） ────────────────────
-  push:
-    branches:
-      - main
-
-# 权限：允许 workflow 推送修改后的 README
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     steps:
-      # ── 1. 检出仓库 ──────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ── 2. 安装 Python ───────────────────────────────
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: "pip"
-
-      # ── 3. 安装依赖 ──────────────────────────────────
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install requests
-
-      # ── 4. 运行更新脚本 ───────────────────────────────
-      - name: Update README sections
+      - name: Update stats badges
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          KAGGLE_USERNAME: ${{ vars.KAGGLE_USERNAME }}
-        run: python scripts/update_readme.py
+        run: python3 scripts/update_readme.py
 
-      # ── 5. 提交并推送变更 ─────────────────────────────
-      - name: Commit and push if changed
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # 仅在有实际变更时提交
-          if git diff --quiet; then
-            echo "README 无变化，跳过提交。"
+          if git diff --quiet README.md; then
+            echo "No changes."
           else
             git add README.md
-            git commit -m "📊 Auto-update: refresh stats & activity [skip ci]"
+            git commit -m "📊 Update stats [skip ci]"
             git push
-            echo "README 已更新并推送。"
+            echo "Pushed."
           fi
