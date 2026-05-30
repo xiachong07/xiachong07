@@ -360,22 +360,20 @@
 
 <div align="center">
 
-<!-- ── 聊天卡片 · 纯左对齐 · 不同头像区分 ── -->
+<!-- ── 聊天卡片 · 纯左对齐 · 大头像 ── -->
 <div style="max-width:420px;margin:0 auto;">
 
 <!--  我的消息  -->
-<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:10px;">
+<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:14px;">
 <tr>
-  <td width="38" valign="top" style="padding:0;">
+  <td width="48" valign="top" style="padding:0;">
     <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="34" height="34" style="border-radius:50%;" alt="xiachong" />
+         width="44" height="44" style="border-radius:50%;" alt="xiachong" />
   </td>
-  <td valign="top" style="padding:0 0 0 10px;">
+  <td valign="top" style="padding:0 0 0 12px;">
     <div style="
-      background:#21262d;
-      color:#c9d1d9;
-      padding:9px 13px;
-      border-radius:4px 14px 14px 14px;
+      background:#21262d;color:#c9d1d9;
+      padding:10px 14px;border-radius:4px 16px 16px 16px;
       font-size:13px;line-height:1.55;
     ">
       👋 嗨！我是 <b>xiachong</b><br/>
@@ -388,20 +386,18 @@
 </table>
 
 <!--  访客消息  -->
-<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:10px;">
+<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:14px;">
 <tr>
-  <td width="38" valign="top" style="padding:0;">
+  <td width="48" valign="top" style="padding:0;">
     <div style="
-      width:34px;height:34px;border-radius:50%;
-      background:#30363d;text-align:center;line-height:34px;font-size:15px;
+      width:44px;height:44px;border-radius:50%;
+      background:#30363d;text-align:center;line-height:44px;font-size:18px;
     ">👤</div>
   </td>
-  <td valign="top" style="padding:0 0 0 10px;">
+  <td valign="top" style="padding:0 0 0 12px;">
     <div style="
-      background:#21262d;
-      color:#c9d1d9;
-      padding:9px 13px;
-      border-radius:4px 14px 14px 14px;
+      background:#21262d;color:#c9d1d9;
+      padding:10px 14px;border-radius:4px 16px 16px 16px;
       font-size:13px;line-height:1.55;
     ">
       你的 BirdCLEF 项目用了哪些技术？
@@ -413,16 +409,14 @@
 <!--  我的回复  -->
 <table cellspacing="0" cellpadding="0" border="0">
 <tr>
-  <td width="38" valign="top" style="padding:0;">
+  <td width="48" valign="top" style="padding:0;">
     <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="34" height="34" style="border-radius:50%;" alt="xiachong" />
+         width="44" height="44" style="border-radius:50%;" alt="xiachong" />
   </td>
-  <td valign="top" style="padding:0 0 0 10px;">
+  <td valign="top" style="padding:0 0 0 12px;">
     <div style="
-      background:#21262d;
-      color:#c9d1d9;
-      padding:9px 13px;
-      border-radius:4px 14px 14px 14px;
+      background:#21262d;color:#c9d1d9;
+      padding:10px 14px;border-radius:4px 16px 16px 16px;
       font-size:13px;line-height:1.55;
     ">
       主要用 <b>Python + NumPy</b> 做音频处理<br/>
