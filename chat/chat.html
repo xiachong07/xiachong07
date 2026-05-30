@@ -3,185 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chat with DeepSeek · xiachong07</title>
+<title>Chat · xiachong07</title>
 <style>
   :root {
-    --bg: #0d1117;
-    --surface: #161b22;
-    --border: #30363d;
-    --text: #c9d1d9;
-    --text-secondary: #8b949e;
-    --accent: #58a6ff;
-    --bubble-user: #1f6feb33;
-    --bubble-ai: #161b22;
-    --input-bg: #0d1117;
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #c9d1d9; --text2: #8b949e; --accent: #58a6ff;
+    --bubble-ai: #161b22; --bubble-user: #1f6feb22;
   }
   @media (prefers-color-scheme: light) {
     :root {
-      --bg: #ffffff;
-      --surface: #f6f8fa;
-      --border: #d0d7de;
-      --text: #24292f;
-      --text-secondary: #57606a;
-      --accent: #0969da;
-      --bubble-user: #ddf4ff;
-      --bubble-ai: #f6f8fa;
-      --input-bg: #ffffff;
+      --bg: #fff; --surface: #f6f8fa; --border: #d0d7de;
+      --text: #24292f; --text2: #57606a; --accent: #0969da;
+      --bubble-ai: #f6f8fa; --bubble-user: #ddf4ff;
     }
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background: var(--bg); color: var(--text);
+    height: 100vh; display: flex; flex-direction: column;
   }
-
-  /* ═══════════ Header ═══════════ */
   .header {
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    background: var(--surface); display: flex; align-items: center; gap: 10px;
   }
   .header .avatar {
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #7928ca, #ff0080);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
+    width: 34px; height: 34px; border-radius: 50%;
+    background: linear-gradient(135deg,#7928ca,#ff0080);
+    display: flex; align-items: center; justify-content: center; font-size: 16px;
   }
-  .header h1 { font-size: 16px; font-weight: 600; }
-  .header .sub { font-size: 12px; color: var(--text-secondary); }
+  .header h1 { font-size: 15px; font-weight: 600; }
+  .header .sub { font-size: 11px; color: var(--text2); }
   .header .dot {
-    width: 8px; height: 8px; border-radius: 50%;
+    width: 7px; height: 7px; border-radius: 50%;
     background: #39d353; margin-left: auto;
     animation: pulse 2s infinite;
   }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-
-  /* ═══════════ Messages ═══════════ */
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
   .messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex:1; overflow-y:auto; padding: 16px 20px;
+    display: flex; flex-direction: column; gap: 14px;
   }
   .msg {
-    max-width: 80%;
-    padding: 12px 16px;
-    border-radius: 12px;
-    line-height: 1.6;
-    font-size: 14px;
-    animation: fadeIn 0.3s ease;
+    max-width: 82%; padding: 10px 14px; border-radius: 14px;
+    font-size: 13px; line-height: 1.55;
+    animation: fadeIn .3s ease;
   }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
   .msg.ai {
-    align-self: flex-start;
-    background: var(--bubble-ai);
-    border: 1px solid var(--border);
-    border-bottom-left-radius: 4px;
+    align-self: flex-start; background: var(--bubble-ai);
+    border: 1px solid var(--border); border-bottom-left-radius: 4px;
   }
   .msg.user {
-    align-self: flex-end;
-    background: var(--bubble-user);
-    border: 1px solid var(--accent);
-    border-bottom-right-radius: 4px;
+    align-self: flex-end; background: var(--bubble-user);
+    border: 1px solid var(--accent); border-bottom-right-radius: 4px;
   }
-  .msg .label {
-    font-size: 11px;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-  }
+  .msg .label { font-size: 11px; color: var(--text2); margin-bottom: 3px; }
   .msg.ai .label { color: var(--accent); }
-
-  /* ═══════════ Typing ═══════════ */
+  .msg code {
+    background: var(--border); padding: 1px 5px;
+    border-radius: 3px; font-size: 12px;
+  }
+  .msg pre {
+    background: var(--border); padding: 10px; border-radius: 6px;
+    overflow-x: auto; font-size: 12px; margin: 6px 0;
+  }
   .typing {
-    align-self: flex-start;
-    padding: 12px 16px;
-    background: var(--bubble-ai);
-    border: 1px solid var(--border);
-    border-radius: 12px 12px 12px 4px;
-    display: none;
+    align-self: flex-start; padding: 10px 14px;
+    background: var(--bubble-ai); border: 1px solid var(--border);
+    border-radius: 14px 14px 14px 4px; display: none;
   }
   .typing.active { display: block; }
   .typing span {
-    display: inline-block;
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--text-secondary);
-    margin: 0 2px;
+    display: inline-block; width: 5px; height: 5px;
+    border-radius: 50%; background: var(--text2); margin: 0 2px;
     animation: bounce 1.4s infinite;
   }
-  .typing span:nth-child(2) { animation-delay: 0.2s; }
-  .typing span:nth-child(3) { animation-delay: 0.4s; }
-  @keyframes bounce {
-    0%, 60%, 100% { transform: translateY(0); }
-    30% { transform: translateY(-6px); }
-  }
-
-  /* ═══════════ Input ═══════════ */
+  .typing span:nth-child(2){animation-delay:.2s}
+  .typing span:nth-child(3){animation-delay:.4s}
+  @keyframes bounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-5px)} }
   .input-area {
-    padding: 16px 20px;
-    border-top: 1px solid var(--border);
-    background: var(--surface);
-    display: flex;
-    gap: 10px;
+    padding: 14px 20px; border-top: 1px solid var(--border);
+    background: var(--surface); display: flex; gap: 10px;
   }
   .input-area input {
-    flex: 1;
-    padding: 10px 16px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--input-bg);
-    color: var(--text);
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.2s;
+    flex:1; padding: 10px 14px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--bg);
+    color: var(--text); font-size: 13px; outline: none;
   }
-  .input-area input:focus {
-    border-color: var(--accent);
-  }
+  .input-area input:focus { border-color: var(--accent); }
   .input-area button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    background: linear-gradient(135deg, #7928ca, #ff0080);
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity 0.2s;
+    padding: 10px 18px; border-radius: 8px; border: none;
+    background: linear-gradient(135deg,#7928ca,#ff0080);
+    color: #fff; font-size: 13px; font-weight: 600; cursor: pointer;
   }
-  .input-area button:hover { opacity: 0.85; }
-  .input-area button:disabled { opacity: 0.5; cursor: not-allowed; }
-
-  /* ═══════════ Footer ═══════════ */
+  .input-area button:disabled { opacity: .5; }
   .footer {
-    text-align: center;
-    padding: 8px;
-    font-size: 11px;
-    color: var(--text-secondary);
+    text-align:center; padding:6px; font-size:11px; color: var(--text2);
   }
   .footer a { color: var(--accent); text-decoration: none; }
-
-  /* ═══════════ Responsive ═══════════ */
-  @media (max-width: 600px) {
-    .msg { max-width: 90%; }
-    .header h1 { font-size: 14px; }
-  }
+  @media (max-width:600px){ .msg{max-width:90%} }
 </style>
 </head>
 <body>
@@ -190,7 +111,7 @@
   <div class="avatar">🤖</div>
   <div>
     <h1>Chat with DeepSeek</h1>
-    <div class="sub">Powered by DeepSeek · @xiachong07</div>
+    <div class="sub">@xiaochong07 · Ask about projects</div>
   </div>
   <div class="dot" title="Online"></div>
 </div>
@@ -198,51 +119,55 @@
 <div class="messages" id="messages">
   <div class="msg ai">
     <div class="label">DeepSeek</div>
-    Hi! I'm DeepSeek, an AI assistant. Ask me anything about coding, math, data science, or the projects in this portfolio. How can I help you today?
+    👋 Hi! I'm an AI assistant on <b>xiachong07</b>'s profile.<br/><br/>
+    🎵 Ask about <b>BirdCLEF 2026</b> audio classification<br/>
+    📊 Ask about <b>data science</b> projects<br/>
+    💻 Ask about <b>Python, PyTorch</b> tech stack<br/><br/>
+    How can I help you today?
   </div>
 </div>
 
-<div class="typing" id="typing">
-  <span></span><span></span><span></span>
-</div>
+<div class="typing" id="typing"><span></span><span></span><span></span></div>
 
 <div class="input-area">
-  <input
-    id="userInput"
-    type="text"
-    placeholder="Ask me anything..."
-    autocomplete="off"
-    onkeydown="if(event.key==='Enter')send()"
-  />
+  <input id="userInput" type="text" placeholder="Ask me anything..."
+         autocomplete="off" onkeydown="if(event.key==='Enter')send()" />
   <button id="sendBtn" onclick="send()">Send</button>
 </div>
 
 <div class="footer">
   <a href="https://github.com/xiachong07" target="_blank">@xiachong07</a>
-  · Responses may be inaccurate
+  · Powered by DeepSeek
 </div>
 
 <script>
-const API_URL = 'https://deepseek-chat.YOUR-SUBDOMAIN.workers.dev';
-// ── Replace deepseek-chat.YOUR-SUBDOMAIN with your real worker URL ──
+// ── DeepSeek API 直连 ──
+const API_KEY = 'sk-9056c123b8454d969c879efd3233cfd9';
+const API_URL = 'https://api.deepseek.com/v1/chat/completions';
 
 let isLoading = false;
+let history = [];
 
 function scrollBottom() {
   const el = document.getElementById('messages');
   el.scrollTop = el.scrollHeight;
 }
 
-function addMessage(role, text) {
+function addMsg(role, text) {
   const div = document.createElement('div');
   div.className = 'msg ' + role;
-  if (role === 'ai') {
-    div.innerHTML = '<div class="label">DeepSeek</div>' + text;
-  } else {
-    div.innerHTML = '<div class="label">You</div>' + text;
-  }
+  const label = role === 'ai' ? 'DeepSeek' : 'You';
+  div.innerHTML = '<div class="label">' + label + '</div>' + text;
   document.getElementById('messages').appendChild(div);
   scrollBottom();
+}
+
+function renderMd(s) {
+  return s
+    .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code>$2</code></pre>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+    .replace(/\n/g, '<br>');
 }
 
 async function send() {
@@ -256,7 +181,8 @@ async function send() {
   btn.disabled = true;
   isLoading = true;
 
-  addMessage('user', escapeHtml(text));
+  addMsg('user', text);
+  history.push({ role: 'user', content: text });
 
   const typing = document.getElementById('typing');
   typing.classList.add('active');
@@ -265,22 +191,35 @@ async function send() {
   try {
     const resp = await fetch(API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: text })
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + API_KEY
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',
+        messages: [
+          { role: 'system', content: 'You are a friendly AI assistant on xiachong07\'s GitHub profile. You help visitors learn about his projects: BirdCLEF 2026 (audio classification), data science work, math modeling, Python/PyTorch stack. Keep replies concise and helpful. Reply in the same language as the user.' },
+          ...history.slice(-10)
+        ],
+        max_tokens: 1024
+      })
     });
 
-    if (!resp.ok) throw new Error('API error: ' + resp.status);
+    typing.classList.remove('active');
+
+    if (!resp.ok) {
+      const err = await resp.text();
+      addMsg('ai', '⚠️ API error. Please try again later.<br><sub>' + err.slice(0, 100) + '</sub>');
+      return;
+    }
 
     const data = await resp.json();
-    typing.classList.remove('active');
-    addMessage('ai', formatMarkdown(data.reply));
+    const reply = data.choices[0].message.content;
+    history.push({ role: 'assistant', content: reply });
+    addMsg('ai', renderMd(reply));
   } catch (e) {
     typing.classList.remove('active');
-    addMessage('ai',
-      'Chat not configured yet. '
-      + '<a href="https://github.com/xiachong07/xiachong07/blob/main/chat/worker.js" target="_blank">Deploy the Worker</a> '
-      + 'with your DeepSeek API key.'
-    );
+    addMsg('ai', '⚠️ Network error. Please check your connection and try again.');
     console.error(e);
   }
 
@@ -288,17 +227,6 @@ async function send() {
   btn.disabled = false;
   input.focus();
   isLoading = false;
-}
-
-function escapeHtml(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
-
-function formatMarkdown(s) {
-  return s
-    .replace(/`([^`]+)`/g, '<code style="background:var(--border);padding:1px 5px;border-radius:3px;font-size:13px">$1</code>')
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n/g, '<br>');
 }
 </script>
 </body>
