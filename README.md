@@ -360,32 +360,23 @@
 
 <div align="center">
 
-<!-- ── 聊天卡片 ── -->
-<div style="
-  max-width:430px;
-  margin:0 auto;
-  border:1px solid #30363d;
-  border-radius:16px;
-  background:#161b22;
-  padding:16px 14px;
-">
+<!-- ── 聊天卡片 · 纯左对齐 · 不同头像区分 ── -->
+<div style="max-width:420px;margin:0 auto;">
 
-<!--  我的消息 · 靠左  -->
-<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:12px;">
+<!--  我的消息  -->
+<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:10px;">
 <tr>
-  <td width="36" valign="top" style="padding:0;">
+  <td width="38" valign="top" style="padding:0;">
     <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="32" height="32"
-         style="border-radius:50%;" alt="" />
+         width="34" height="34" style="border-radius:50%;" alt="xiachong" />
   </td>
-  <td valign="top" style="padding:0 0 0 8px;">
+  <td valign="top" style="padding:0 0 0 10px;">
     <div style="
       background:#21262d;
       color:#c9d1d9;
-      padding:8px 12px;
+      padding:9px 13px;
       border-radius:4px 14px 14px 14px;
-      font-size:13px;
-      line-height:1.5;
+      font-size:13px;line-height:1.55;
     ">
       👋 嗨！我是 <b>xiachong</b><br/>
       数学系学生 · ML &amp; Data Science<br/>
@@ -396,52 +387,43 @@
 </tr>
 </table>
 
-<!--  访客消息 · 靠右  -->
-<table cellspacing="0" cellpadding="0" border="0" align="right" style="margin-bottom:12px;">
+<!--  访客消息  -->
+<table cellspacing="0" cellpadding="0" border="0" style="margin-bottom:10px;">
 <tr>
-  <td valign="top" style="padding:0 8px 0 0;">
+  <td width="38" valign="top" style="padding:0;">
     <div style="
-      background:linear-gradient(135deg,#7928ca,#ff0080);
-      color:#fff;
-      padding:8px 12px;
-      border-radius:14px 4px 14px 14px;
-      font-size:13px;
-      max-width:240px;
+      width:34px;height:34px;border-radius:50%;
+      background:#30363d;text-align:center;line-height:34px;font-size:15px;
+    ">👤</div>
+  </td>
+  <td valign="top" style="padding:0 0 0 10px;">
+    <div style="
+      background:#21262d;
+      color:#c9d1d9;
+      padding:9px 13px;
+      border-radius:4px 14px 14px 14px;
+      font-size:13px;line-height:1.55;
     ">
       你的 BirdCLEF 项目用了哪些技术？
     </div>
   </td>
-  <td width="36" valign="top" style="padding:0;">
-    <div style="
-      width:32px;height:32px;
-      border-radius:50%;
-      background:#30363d;
-      text-align:center;line-height:32px;
-      font-size:14px;
-    ">👤</div>
-  </td>
 </tr>
 </table>
 
-<!--  清除浮动 → 换行  -->
-<div style="clear:both;height:0;"></div>
-
-<!--  我的回复 · 靠左  -->
+<!--  我的回复  -->
 <table cellspacing="0" cellpadding="0" border="0">
 <tr>
-  <td width="36" valign="top" style="padding:0;">
+  <td width="38" valign="top" style="padding:0;">
     <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="32" height="32"
-         style="border-radius:50%;" alt="" />
+         width="34" height="34" style="border-radius:50%;" alt="xiachong" />
   </td>
-  <td valign="top" style="padding:0 0 0 8px;">
+  <td valign="top" style="padding:0 0 0 10px;">
     <div style="
       background:#21262d;
       color:#c9d1d9;
-      padding:8px 12px;
+      padding:9px 13px;
       border-radius:4px 14px 14px 14px;
-      font-size:13px;
-      line-height:1.5;
+      font-size:13px;line-height:1.55;
     ">
       主要用 <b>Python + NumPy</b> 做音频处理<br/>
       <b>PyTorch</b> 训练分类模型，点进来聊 👉
