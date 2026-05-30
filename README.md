@@ -228,7 +228,7 @@
 
 <br />
 
-<a href="https://cicadaas-design.github.io/snake.html">
+<a href="https://xiachong07.github.io/snake.html">
   <img src="https://img.shields.io/badge/🕹️_交互版-悬停浮动放大效果-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Interactive" />
 </a>
 
