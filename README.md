@@ -349,140 +349,126 @@
   修改颜色: 编辑 generate-snake.yml 中的 palette 参数
 -->
 
-## 💬 了解我的项目
-
-<div align="center">
+## 💬 与我对话
 
 <!--
-  聊天预览卡片 · 纯 HTML/CSS · 点击进入完整对话
-  深色模式自适应，手机端响应式
-  想修改欢迎语？搜下面的 "I'm DeepSeek"
+  聊天预览卡片 · 模拟真实对话框
+  左侧 = xiachong 头像 + 气泡（个人介绍）
+  右侧 = 访客头像 + 气泡（提问）
+  点击任意位置 → 进入完整聊天页
 -->
+
+<div align="center">
 
 <a href="https://xiachong07.github.io/chat.html" style="text-decoration:none;">
 
 <div style="
-  max-width:480px;
+  max-width:440px;
   margin:0 auto;
   border:1px solid #30363d;
-  border-radius:16px;
-  overflow:hidden;
+  border-radius:18px;
   background:#161b22;
-  box-shadow:0 4px 24px rgba(0,0,0,0.3);
-  transition:transform 0.2s,border-color 0.2s;
+  padding:20px 18px;
 ">
 
-<!--  Header  -->
-<div style="
-  padding:14px 18px;
-  background:linear-gradient(135deg,#1a0a2e,#2d1b69);
-  display:flex;
-  align-items:center;
-  gap:10px;
-  border-bottom:1px solid #30363d;
-">
-  <div style="
-    width:32px;height:32px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#7928ca,#ff0080);
-    display:flex;align-items:center;justify-content:center;
-    font-size:16px;
-  ">🤖</div>
-  <div style="text-align:left;">
-    <div style="color:#e6edf3;font-size:14px;font-weight:600;">DeepSeek</div>
-    <div style="color:#8b949e;font-size:11px;">🟢 Online · Ask me about my projects</div>
-  </div>
-</div>
+<!-- ── 我的消息（左侧） ── -->
+<table style="border:none;margin-bottom:10px;">
+<tr>
+  <td style="width:38px;vertical-align:top;border:none;padding:0;">
+    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+         width="34" height="34"
+         style="border-radius:50%;display:block;"
+         alt="xiachong" />
+  </td>
+  <td style="border:none;padding:0 0 0 10px;">
+    <div style="
+      background:#21262d;
+      color:#c9d1d9;
+      padding:10px 14px;
+      border-radius:4px 14px 14px 14px;
+      font-size:13px;
+      line-height:1.6;
+      text-align:left;
+      max-width:320px;
+    ">
+      👋 嗨！我是 <b>xiachong</b><br/>
+      数学系学生 · ML & Data Science<br/>
+      正在参加 <b>BirdCLEF 2026</b> 竞赛<br/>
+      你可以问我关于我的项目、技术栈、<br/>
+      或者数学建模的任何问题 👇
+    </div>
+  </td>
+</tr>
+</table>
 
-<!--  Chat bubbles  -->
-<div style="padding:16px 18px;display:flex;flex-direction:column;gap:10px;">
+<!-- ── 访客消息（右侧） ── -->
+<table style="border:none;margin-bottom:10px;margin-left:auto;">
+<tr>
+  <td style="border:none;padding:0 8px 0 0;">
+    <div style="
+      background:linear-gradient(135deg,#7928ca,#ff0080);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:14px 4px 14px 14px;
+      font-size:13px;
+      text-align:left;
+      max-width:280px;
+    ">
+      你的 BirdCLEF 项目用到了哪些技术？
+    </div>
+  </td>
+  <td style="width:36px;vertical-align:top;border:none;padding:0;">
+    <div style="
+      width:34px;height:34px;
+      border-radius:50%;
+      background:#30363d;
+      display:flex;align-items:center;justify-content:center;
+      font-size:15px;
+    ">👤</div>
+  </td>
+</tr>
+</table>
 
-<!--  AI message  -->
-<div style="display:flex;gap:8px;align-items:flex-start;">
-  <div style="
-    width:24px;height:24px;border-radius:50%;flex-shrink:0;
-    background:linear-gradient(135deg,#7928ca,#ff0080);
-    display:flex;align-items:center;justify-content:center;
-    font-size:11px;
-  ">🤖</div>
-  <div style="
-    background:#21262d;
-    color:#c9d1d9;
-    padding:10px 14px;
-    border-radius:14px 14px 14px 4px;
-    font-size:13px;
-    line-height:1.5;
-    text-align:left;
-    max-width:340px;
-  ">
-    👋 Hi! I'm DeepSeek. You can ask me about:<br/><br/>
-    🎵 <b>BirdCLEF 2026</b> — audio classification<br/>
-    📊 <b>Data Science</b> — my ML projects<br/>
-    📐 <b>Math Modeling</b> — competition prep<br/>
-    💻 <b>Tech Stack</b> — Python, PyTorch, etc.
-  </div>
-</div>
-
-<!--  User message -->
-<div style="display:flex;gap:8px;align-items:flex-start;justify-content:flex-end;">
-  <div style="
-    background:linear-gradient(135deg,#7928ca,#ff0080);
-    color:#fff;
-    padding:10px 14px;
-    border-radius:14px 14px 4px 14px;
-    font-size:13px;
-    text-align:left;
-    max-width:280px;
-  ">
-    Tell me about your BirdCLEF project
-  </div>
-  <div style="
-    width:24px;height:24px;border-radius:50%;flex-shrink:0;
-    background:#30363d;
-    display:flex;align-items:center;justify-content:center;
-    font-size:11px;
-  ">👤</div>
-</div>
-
-</div>
-
-<!--  Input bar -->
-<div style="
-  padding:12px 18px;
-  border-top:1px solid #30363d;
-  display:flex;
-  gap:8px;
-  align-items:center;
-">
-  <div style="
-    flex:1;
-    padding:8px 14px;
-    border-radius:20px;
-    border:1px solid #30363d;
-    background:#0d1117;
-    color:#8b949e;
-    font-size:13px;
-    text-align:left;
-  ">💬 点击此处开始对话...</div>
-  <div style="
-    padding:8px 16px;
-    border-radius:20px;
-    background:linear-gradient(135deg,#7928ca,#ff0080);
-    color:#fff;
-    font-size:12px;
-    font-weight:600;
-    border:none;
-    cursor:pointer;
-    white-space:nowrap;
-  ">发送 →</div>
-</div>
+<!-- ── 我的回复（左侧） ── -->
+<table style="border:none;">
+<tr>
+  <td style="width:38px;vertical-align:top;border:none;padding:0;">
+    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+         width="34" height="34"
+         style="border-radius:50%;display:block;"
+         alt="xiachong" />
+  </td>
+  <td style="border:none;padding:0 0 0 10px;">
+    <div style="
+      background:#21262d;
+      color:#c9d1d9;
+      padding:10px 14px;
+      border-radius:4px 14px 14px 14px;
+      font-size:13px;
+      line-height:1.6;
+      text-align:left;
+      max-width:320px;
+    ">
+      主要用 <b>Python + NumPy</b> 做音频特征提取，<br/>
+      <b>PyTorch</b> 训练分类模型<br/>
+      更多细节可以问我哦～
+    </div>
+  </td>
+</tr>
+</table>
 
 </div>
 
 </a>
 
 <br />
-<sub>👆 点击任意位置进入完整对话 · 深色/浅色模式自适应 · 手机端适配</sub>
+
+<a href="https://xiachong07.github.io/chat.html">
+  <img src="https://img.shields.io/badge/💬_点击进入对话-DeepSeek_AI-58a6ff?style=for-the-badge&logo=openai&logoColor=white" alt="Chat" />
+</a>
+
+<br />
+<sub>👆 点击聊天区域或按钮进入完整对话页 · 深色/浅色自适应</sub>
 
 </div>
 
