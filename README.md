@@ -103,14 +103,23 @@
 
 <div align="center">
 
+<!--
+  所有徽章使用自托管 SVG, 内嵌 CSS 动画:
+  - 渐变背景 #7928ca → #ff0080
+  - 脉冲动画 2s 循环 (opacity 1 → 0.75)
+  - 修改: 运行 scripts/gen_badges.py 重新生成
+  - 添加: 在 gen_badges.py 的 SKILLS 列表追加条目即可
+  - 徽章存放: assets/badges/
+-->
+
 <!-- ── 💻 编程语言 ── -->
 **💻 编程语言**
 <br />
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/python.svg" alt="Python" />
 &nbsp;
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/cpp.svg" alt="C++" />
 &nbsp;
-<img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/latex.svg" alt="LaTeX" />
 
 <br />
 <br />
@@ -118,9 +127,9 @@
 <!-- ── 🤖 机器学习框架 ── -->
 **🤖 机器学习框架**
 <br />
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/pytorch.svg" alt="PyTorch" />
 &nbsp;
-<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/scikit-learn.svg" alt="Scikit-learn" />
 
 <br />
 <br />
@@ -128,13 +137,13 @@
 <!-- ── 📊 数据处理工具 ── -->
 **📊 数据处理工具**
 <br />
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/pandas.svg" alt="Pandas" />
 &nbsp;
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/numpy.svg" alt="NumPy" />
 &nbsp;
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/matplotlib.svg" alt="Matplotlib" />
 &nbsp;
-<img src="https://img.shields.io/badge/Librosa-3E4A89?style=for-the-badge&logo=librosa&logoColor=white" alt="Librosa" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/librosa.svg" alt="Librosa" />
 
 <br />
 <br />
@@ -142,11 +151,11 @@
 <!-- ── 🔧 开发工具 ── -->
 **🔧 开发工具**
 <br />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/git.svg" alt="Git" />
 &nbsp;
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/vs-code.svg" alt="VS Code" />
 &nbsp;
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+<img src="https://raw.githubusercontent.com/xiachong07/xiachong07/main/assets/badges/jupyter.svg" alt="Jupyter" />
 
 </div>
 

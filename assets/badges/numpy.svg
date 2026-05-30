@@ -1,0 +1,31 @@
+<!--
+  技能徽章: NumPy
+  渐变: #7928ca → #ff0080
+  动画: 2s脉冲 + hover放大
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="28" viewBox="0 0 90 28">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7928ca"/>
+      <stop offset="100%" style="stop-color:#ff0080"/>
+    </linearGradient>
+    <style>
+      .badge-bg {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      .badge-bg:hover {
+        transform: scale(1.1);
+        transform-origin: 45.0px 14px;
+        transition: transform 0.2s ease;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.75; }
+      }
+    </style>
+  </defs>
+  <rect class="badge-bg" width="90" height="28" rx="6" fill="url(#g)"/>
+  <text x="45.0" y="19" text-anchor="middle" fill="#ffffff"
+        font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif"
+        font-size="12" font-weight="600">NumPy</text>
+</svg>
