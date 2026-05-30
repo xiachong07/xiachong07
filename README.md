@@ -360,106 +360,79 @@
 
 <div align="center">
 
-<a href="https://xiachong07.github.io/chat.html" style="text-decoration:none;">
-
+<!-- ── 聊天卡片 ── -->
 <div style="
-  max-width:440px;
+  max-width:420px;
   margin:0 auto;
   border:1px solid #30363d;
-  border-radius:18px;
+  border-radius:16px;
   background:#161b22;
-  padding:20px 18px;
+  padding:18px 16px;
+  text-align:left;
 ">
 
-<!-- ── 我的消息（左侧） ── -->
-<table style="border:none;margin-bottom:10px;">
-<tr>
-  <td style="width:38px;vertical-align:top;border:none;padding:0;">
-    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="34" height="34"
-         style="border-radius:50%;display:block;"
-         alt="xiachong" />
-  </td>
-  <td style="border:none;padding:0 0 0 10px;">
-    <div style="
-      background:#21262d;
-      color:#c9d1d9;
-      padding:10px 14px;
-      border-radius:4px 14px 14px 14px;
-      font-size:13px;
-      line-height:1.6;
-      text-align:left;
-      max-width:320px;
-    ">
-      👋 嗨！我是 <b>xiachong</b><br/>
-      数学系学生 · ML & Data Science<br/>
-      正在参加 <b>BirdCLEF 2026</b> 竞赛<br/>
-      你可以问我关于我的项目、技术栈、<br/>
-      或者数学建模的任何问题 👇
-    </div>
-  </td>
-</tr>
-</table>
-
-<!-- ── 访客消息（右侧） ── -->
-<table style="border:none;margin-bottom:10px;margin-left:auto;">
-<tr>
-  <td style="border:none;padding:0 8px 0 0;">
-    <div style="
-      background:linear-gradient(135deg,#7928ca,#ff0080);
-      color:#fff;
-      padding:10px 14px;
-      border-radius:14px 4px 14px 14px;
-      font-size:13px;
-      text-align:left;
-      max-width:280px;
-    ">
-      你的 BirdCLEF 项目用到了哪些技术？
-    </div>
-  </td>
-  <td style="width:36px;vertical-align:top;border:none;padding:0;">
-    <div style="
-      width:34px;height:34px;
-      border-radius:50%;
-      background:#30363d;
-      display:flex;align-items:center;justify-content:center;
-      font-size:15px;
-    ">👤</div>
-  </td>
-</tr>
-</table>
-
-<!-- ── 我的回复（左侧） ── -->
-<table style="border:none;">
-<tr>
-  <td style="width:38px;vertical-align:top;border:none;padding:0;">
-    <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
-         width="34" height="34"
-         style="border-radius:50%;display:block;"
-         alt="xiachong" />
-  </td>
-  <td style="border:none;padding:0 0 0 10px;">
-    <div style="
-      background:#21262d;
-      color:#c9d1d9;
-      padding:10px 14px;
-      border-radius:4px 14px 14px 14px;
-      font-size:13px;
-      line-height:1.6;
-      text-align:left;
-      max-width:320px;
-    ">
-      主要用 <b>Python + NumPy</b> 做音频特征提取，<br/>
-      <b>PyTorch</b> 训练分类模型<br/>
-      更多细节可以问我哦～
-    </div>
-  </td>
-</tr>
-</table>
-
+<!--  我的消息 · 靠左  -->
+<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;">
+  <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+       width="32" height="32"
+       style="border-radius:50%;flex-shrink:0;"
+       alt="xiachong" />
+  <div style="
+    background:#21262d;
+    color:#c9d1d9;
+    padding:9px 12px;
+    border-radius:4px 14px 14px 14px;
+    font-size:13px;
+    line-height:1.55;
+  ">
+    👋 嗨！我是 <b>xiachong</b><br/>
+    数学系学生 · ML & Data Science<br/>
+    正在参加 <b>BirdCLEF 2026</b> 竞赛<br/>
+    关于我的项目随时问我～
+  </div>
 </div>
 
-</a>
+<!--  访客消息 · 靠右  -->
+<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;flex-direction:row-reverse;">
+  <div style="
+    width:32px;height:32px;
+    border-radius:50%;flex-shrink:0;
+    background:#30363d;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;
+  ">👤</div>
+  <div style="
+    background:linear-gradient(135deg,#7928ca,#ff0080);
+    color:#fff;
+    padding:9px 12px;
+    border-radius:14px 4px 14px 14px;
+    font-size:13px;
+    max-width:260px;
+  ">
+    你的 BirdCLEF 项目用了哪些技术？
+  </div>
+</div>
+
+<!--  我的回复 · 靠左  -->
+<div style="display:flex;align-items:flex-start;gap:8px;">
+  <img src="https://avatars.githubusercontent.com/u/246451853?v=4"
+       width="32" height="32"
+       style="border-radius:50%;flex-shrink:0;"
+       alt="xiachong" />
+  <div style="
+    background:#21262d;
+    color:#c9d1d9;
+    padding:9px 12px;
+    border-radius:4px 14px 14px 14px;
+    font-size:13px;
+    line-height:1.55;
+  ">
+    主要用 <b>Python + NumPy</b> 做音频处理<br/>
+    <b>PyTorch</b> 训练分类模型，点进来聊 👉
+  </div>
+</div>
+
+</div>
 
 <br />
 
@@ -468,7 +441,7 @@
 </a>
 
 <br />
-<sub>👆 点击聊天区域或按钮进入完整对话页 · 深色/浅色自适应</sub>
+<sub>👆 点击按钮进入完整对话页 · 深色/浅色自适应</sub>
 
 </div>
 
