@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chat with Claude · xiachong07</title>
+<title>Chat with DeepSeek · xiachong07</title>
 <style>
   :root {
     --bg: #0d1117;
@@ -189,16 +189,16 @@
 <div class="header">
   <div class="avatar">🤖</div>
   <div>
-    <h1>Chat with Claude</h1>
-    <div class="sub">Powered by Anthropic · @xiachong07</div>
+    <h1>Chat with DeepSeek</h1>
+    <div class="sub">Powered by DeepSeek · @xiachong07</div>
   </div>
   <div class="dot" title="Online"></div>
 </div>
 
 <div class="messages" id="messages">
   <div class="msg ai">
-    <div class="label">Claude Opus 4.7</div>
-    Hi! I'm Claude, an AI assistant. Ask me anything about coding, math, data science, or the projects in this portfolio. How can I help you today?
+    <div class="label">DeepSeek</div>
+    Hi! I'm DeepSeek, an AI assistant. Ask me anything about coding, math, data science, or the projects in this portfolio. How can I help you today?
   </div>
 </div>
 
@@ -223,8 +223,8 @@
 </div>
 
 <script>
-const API_URL = 'https://claude-chat-proxy.YOUR-SUBDOMAIN.workers.dev';
-// ── Replace YOUR-SUBDOMAIN after deploying the Cloudflare Worker ──
+const API_URL = 'https://deepseek-chat.YOUR-SUBDOMAIN.workers.dev';
+// ── Replace deepseek-chat.YOUR-SUBDOMAIN with your real worker URL ──
 
 let isLoading = false;
 
@@ -237,7 +237,7 @@ function addMessage(role, text) {
   const div = document.createElement('div');
   div.className = 'msg ' + role;
   if (role === 'ai') {
-    div.innerHTML = '<div class="label">Claude Opus 4.7</div>' + text;
+    div.innerHTML = '<div class="label">DeepSeek</div>' + text;
   } else {
     div.innerHTML = '<div class="label">You</div>' + text;
   }
@@ -277,9 +277,9 @@ async function send() {
   } catch (e) {
     typing.classList.remove('active');
     addMessage('ai',
-      'Sorry, the chat service is not configured yet. '
-      + 'Please check the Cloudflare Worker setup in the '
-      + '<a href="https://github.com/xiachong07/xiachong07/blob/main/chat/worker.js" target="_blank">worker.js</a> file.'
+      'Chat not configured yet. '
+      + '<a href="https://github.com/xiachong07/xiachong07/blob/main/chat/worker.js" target="_blank">Deploy the Worker</a> '
+      + 'with your DeepSeek API key.'
     );
     console.error(e);
   }
