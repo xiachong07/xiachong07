@@ -217,12 +217,20 @@
 
 <div align="center">
 
-<a href="https://xiachong07.github.io/xiachong07/snake.html">
-  <img src="https://img.shields.io/badge/🕹️_交互式贡献图-点击体验-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Interactive Snake" />
-</a>
+<!--  贪吃蛇动画 · 深色/浅色双版  -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake.svg" />
+  <img alt="snake" src="https://raw.githubusercontent.com/xiachong07/xiachong07/output/github-contribution-grid-snake-dark.svg" />
+</picture>
 
 <br />
-<sub>悬停方块查看贡献详情 · 光标周围方块浮动放大 · 贪吃蛇动画</sub>
+
+<a href="https://cicadaas-design.github.io/snake.html">
+  <img src="https://img.shields.io/badge/🕹️_交互版-悬停浮动放大效果-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Interactive" />
+</a>
 
 </div>
 
