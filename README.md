@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Mathematics is the art of giving the same name to different things."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Henri Poincaré</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
