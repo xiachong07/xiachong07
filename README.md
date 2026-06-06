@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The essence of mathematics lies in its freedom."*
+> *"Mathematics is the art of giving the same name to different things."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Henri Poincaré</div>
 <!-- END_SECTION:quote -->
 
 </div>
