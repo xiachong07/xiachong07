@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Martin Fowler</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
