@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Pure mathematics is, in its way, the poetry of logical ideas."*
+> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
 >
-> <div align="right">— Albert Einstein</div>
+> <div align="right">— Martin Fowler</div>
 <!-- END_SECTION:quote -->
 
 </div>
