@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Pure mathematics is, in its way, the poetry of logical ideas."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Albert Einstein</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
