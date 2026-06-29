@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"In mathematics, the art of asking questions is more valuable than solving problems."*
+> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Martin Fowler</div>
 <!-- END_SECTION:quote -->
 
 </div>
