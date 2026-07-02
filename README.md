@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"In mathematics, the art of asking questions is more valuable than solving problems."*
+> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Stefan Banach</div>
 <!-- END_SECTION:quote -->
 
 </div>
