@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
+> *"The best way to learn data science is to do data science."*
 >
-> <div align="right">— Bill Gates</div>
+> <div align="right">— Jeremy Howard</div>
 <!-- END_SECTION:quote -->
 
 </div>
