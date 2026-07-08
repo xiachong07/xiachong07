@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"First, solve the problem. Then, write the code."*
+> *"Pure mathematics is, in its way, the poetry of logical ideas."*
 >
-> <div align="right">— John Johnson</div>
+> <div align="right">— Albert Einstein</div>
 <!-- END_SECTION:quote -->
 
 </div>
