@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
+> *"The best way to learn data science is to do data science."*
 >
-> <div align="right">— Stefan Banach</div>
+> <div align="right">— Jeremy Howard</div>
 <!-- END_SECTION:quote -->
 
 </div>
