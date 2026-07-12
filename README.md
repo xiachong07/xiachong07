@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> *"The best way to learn data science is to do data science."*
 >
-> <div align="right">— Martin Fowler</div>
+> <div align="right">— Jeremy Howard</div>
 <!-- END_SECTION:quote -->
 
 </div>
