@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Pure mathematics is, in its way, the poetry of logical ideas."*
+> *"In mathematics, the art of asking questions is more valuable than solving problems."*
 >
-> <div align="right">— Albert Einstein</div>
+> <div align="right">— Georg Cantor</div>
 <!-- END_SECTION:quote -->
 
 </div>
