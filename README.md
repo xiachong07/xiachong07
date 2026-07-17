@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"In mathematics, the art of asking questions is more valuable than solving problems."*
+> *"Talk is cheap. Show me the code."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Linus Torvalds</div>
 <!-- END_SECTION:quote -->
 
 </div>
