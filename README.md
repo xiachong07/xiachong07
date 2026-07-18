@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Talk is cheap. Show me the code."*
+> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
 >
-> <div align="right">— Linus Torvalds</div>
+> <div align="right">— Stefan Banach</div>
 <!-- END_SECTION:quote -->
 
 </div>
