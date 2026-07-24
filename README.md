@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> *"Mathematics is the art of giving the same name to different things."*
 >
-> <div align="right">— Martin Fowler</div>
+> <div align="right">— Henri Poincaré</div>
 <!-- END_SECTION:quote -->
 
 </div>
