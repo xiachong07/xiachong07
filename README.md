@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
+> *"First, solve the problem. Then, write the code."*
 >
-> <div align="right">— Stefan Banach</div>
+> <div align="right">— John Johnson</div>
 <!-- END_SECTION:quote -->
 
 </div>
