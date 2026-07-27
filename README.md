@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"First, solve the problem. Then, write the code."*
+> *"Talk is cheap. Show me the code."*
 >
-> <div align="right">— John Johnson</div>
+> <div align="right">— Linus Torvalds</div>
 <!-- END_SECTION:quote -->
 
 </div>
