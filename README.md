@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
+> *"First, solve the problem. Then, write the code."*
 >
-> <div align="right">— Bill Gates</div>
+> <div align="right">— John Johnson</div>
 <!-- END_SECTION:quote -->
 
 </div>
