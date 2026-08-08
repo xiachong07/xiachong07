@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to learn data science is to do data science."*
+> *"Talk is cheap. Show me the code."*
 >
-> <div align="right">— Jeremy Howard</div>
+> <div align="right">— Linus Torvalds</div>
 <!-- END_SECTION:quote -->
 
 </div>
