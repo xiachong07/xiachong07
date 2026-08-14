@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> *"The essence of mathematics lies in its freedom."*
 >
-> <div align="right">— Martin Fowler</div>
+> <div align="right">— Georg Cantor</div>
 <!-- END_SECTION:quote -->
 
 </div>
