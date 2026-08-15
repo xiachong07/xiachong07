@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The essence of mathematics lies in its freedom."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
