@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Pure mathematics is, in its way, the poetry of logical ideas."*
+> *"The best way to predict the future is to invent it."*
 >
-> <div align="right">— Albert Einstein</div>
+> <div align="right">— Alan Kay</div>
 <!-- END_SECTION:quote -->
 
 </div>
