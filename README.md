@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"Mathematics is the art of giving the same name to different things."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— Henri Poincaré</div>
 <!-- END_SECTION:quote -->
 
 </div>
