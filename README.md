@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"The essence of mathematics lies in its freedom."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— Georg Cantor</div>
 <!-- END_SECTION:quote -->
 
 </div>
