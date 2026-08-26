@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The essence of mathematics lies in its freedom."*
+> *"Talk is cheap. Show me the code."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Linus Torvalds</div>
 <!-- END_SECTION:quote -->
 
 </div>
