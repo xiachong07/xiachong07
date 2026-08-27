@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Talk is cheap. Show me the code."*
+> *"The best way to predict the future is to invent it."*
 >
-> <div align="right">— Linus Torvalds</div>
+> <div align="right">— Alan Kay</div>
 <!-- END_SECTION:quote -->
 
 </div>
