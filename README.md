@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
