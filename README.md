@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— Bill Gates</div>
 <!-- END_SECTION:quote -->
 
 </div>
