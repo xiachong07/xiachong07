@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"In mathematics, the art of asking questions is more valuable than solving problems."*
+> *"The best way to predict the future is to invent it."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Alan Kay</div>
 <!-- END_SECTION:quote -->
 
 </div>
