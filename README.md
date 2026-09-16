@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— Martin Fowler</div>
 <!-- END_SECTION:quote -->
 
 </div>
