@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
 >
-> <div align="right">— Martin Fowler</div>
+> <div align="right">— Bill Gates</div>
 <!-- END_SECTION:quote -->
 
 </div>
