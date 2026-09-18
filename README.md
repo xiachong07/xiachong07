@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
+> *"Pure mathematics is, in its way, the poetry of logical ideas."*
 >
-> <div align="right">— Bill Gates</div>
+> <div align="right">— Albert Einstein</div>
 <!-- END_SECTION:quote -->
 
 </div>
