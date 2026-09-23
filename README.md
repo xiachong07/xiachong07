@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Talk is cheap. Show me the code."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Linus Torvalds</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
