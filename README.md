@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— Bill Gates</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
