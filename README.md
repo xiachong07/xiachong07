@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to learn data science is to do data science."*
+> *"Pure mathematics is, in its way, the poetry of logical ideas."*
 >
-> <div align="right">— Jeremy Howard</div>
+> <div align="right">— Albert Einstein</div>
 <!-- END_SECTION:quote -->
 
 </div>
