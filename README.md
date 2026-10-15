@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Mathematics is the art of giving the same name to different things."*
+> *"Talk is cheap. Show me the code."*
 >
-> <div align="right">— Henri Poincaré</div>
+> <div align="right">— Linus Torvalds</div>
 <!-- END_SECTION:quote -->
 
 </div>
