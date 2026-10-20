@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Pure mathematics is, in its way, the poetry of logical ideas."*
+> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
 >
-> <div align="right">— Albert Einstein</div>
+> <div align="right">— Stefan Banach</div>
 <!-- END_SECTION:quote -->
 
 </div>
