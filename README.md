@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"Mathematics is the art of giving the same name to different things."*
+> *"Mathematics is the most beautiful and most powerful creation of the human spirit."*
 >
-> <div align="right">— Henri Poincaré</div>
+> <div align="right">— Stefan Banach</div>
 <!-- END_SECTION:quote -->
 
 </div>
