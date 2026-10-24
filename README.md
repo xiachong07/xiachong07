@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The essence of mathematics lies in its freedom."*
+> *"The best way to learn data science is to do data science."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Jeremy Howard</div>
 <!-- END_SECTION:quote -->
 
 </div>
