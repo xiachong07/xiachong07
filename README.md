@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"All models are wrong, but some are useful."*
+> *"In mathematics, the art of asking questions is more valuable than solving problems."*
 >
-> <div align="right">— George Box</div>
+> <div align="right">— Georg Cantor</div>
 <!-- END_SECTION:quote -->
 
 </div>
