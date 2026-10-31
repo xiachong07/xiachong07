@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"In mathematics, the art of asking questions is more valuable than solving problems."*
+> *"Measuring programming progress by lines of code is like measuring aircraft building progress by weight."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— Bill Gates</div>
 <!-- END_SECTION:quote -->
 
 </div>
