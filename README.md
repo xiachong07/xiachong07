@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"All models are wrong, but some are useful."*
+> *"The best way to learn data science is to do data science."*
 >
-> <div align="right">— George Box</div>
+> <div align="right">— Jeremy Howard</div>
 <!-- END_SECTION:quote -->
 
 </div>
