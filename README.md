@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The essence of mathematics lies in its freedom."*
+> *"First, solve the problem. Then, write the code."*
 >
-> <div align="right">— Georg Cantor</div>
+> <div align="right">— John Johnson</div>
 <!-- END_SECTION:quote -->
 
 </div>
