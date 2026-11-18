@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"First, solve the problem. Then, write the code."*
+> *"All models are wrong, but some are useful."*
 >
-> <div align="right">— John Johnson</div>
+> <div align="right">— George Box</div>
 <!-- END_SECTION:quote -->
 
 </div>
