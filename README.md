@@ -331,9 +331,9 @@
 <div align="center">
 
 <!-- START_SECTION:quote -->
-> *"The best way to predict the future is to invent it."*
+> *"First, solve the problem. Then, write the code."*
 >
-> <div align="right">— Alan Kay</div>
+> <div align="right">— John Johnson</div>
 <!-- END_SECTION:quote -->
 
 </div>
